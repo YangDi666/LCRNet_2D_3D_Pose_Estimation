@@ -7,11 +7,7 @@
 Clone the repo:
 
 ```
-<<<<<<< HEAD
-git clone https://cde.toyota-europe.com/stash/scm/tr/lcrnet_training_code.git
-=======
 https://github.com/YangDi666/LCRNet-2D-3D-Pose-Estimation.git
->>>>>>> 96109e1d400d5e1951ecfc6663f436bae8fa5bc4
 ```
 
 ### Requirements
@@ -30,11 +26,9 @@ Tested under python3.
   - packaging
   - [pycocotools](https://github.com/cocodataset/cocoapi)  — for COCO dataset, also available from pip.
   - tensorboardX  — for logging the losses in Tensorboard
-<<<<<<< HEAD
   - IPython
   - scikit-learn
-=======
->>>>>>> 96109e1d400d5e1951ecfc6663f436bae8fa5bc4
+
 - An NVIDAI GPU and CUDA 8.0 or higher. Some operations only have gpu implementation.
 - **NOTICE**: different versions of Pytorch package have different memory usages.
 
@@ -63,11 +57,8 @@ mkdir data
 ```
 
 - **Human3.6M (parsed to COCO format**):
-<<<<<<< HEAD
-  Download the images and annotations [here]().
-=======
-  Download the images and annotations [here](https://drive.google.com/drive/folders/1uPrVqeKSQg32eCzNKQfTu4aMnV9790wU?usp=sharing).
->>>>>>> 96109e1d400d5e1951ecfc6663f436bae8fa5bc4
+Download the images and annotations [here](https://drive.google.com/drive/folders/1uPrVqeKSQg32eCzNKQfTu4aMnV9790wU?usp=sharing).
+
 
   And make sure to put the files as the following structure:
   ```
@@ -172,7 +163,7 @@ python tools/demo.py {modelname in the folder "models" (ex: model_step3999, InTh
 ```
 The result will be saved in the folder "tests"
 
-<<<<<<< HEAD
+
 ## Groud-truth generation
 
 ### Use the existing model
@@ -187,5 +178,4 @@ When you want to create a new dataset with the annotated images, just run :
 python tools/csv2coco.py
 ```
 Then you can get the coco format dataset in "data/coco". For training, just change " --dataset real1 " into " --dataset coco2017 ".
-=======
->>>>>>> 96109e1d400d5e1951ecfc6663f436bae8fa5bc4
+
