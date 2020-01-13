@@ -7,7 +7,7 @@
 Clone the repo:
 
 ```
-git clone https://cde.toyota-europe.com/stash/scm/tr/lcrnet_training_code.git
+https://github.com/YangDi666/LCRNet-2D-3D-Pose-Estimation.git
 ```
 
 ### Requirements
