@@ -6,7 +6,7 @@
 ![ad](https://github.com/YangDi666/LCRNet-2D-3D-Pose-Estimation/blob/master/demo/result_010817395615_0real_im_1_1.png)
 
 ## Introduction  
-- [LCR-Net Multi-person 2D and 3D Pose Detection](https://thoth.inrialpes.fr/src/LCR-Net/) is realised by INRIA Grenoble team and this code is for training the model.
+- [LCR-Net Multi-person 2D and 3D Pose Detection](https://thoth.inrialpes.fr/src/LCR-Net/) is realised by INRIA THOTH team and this code is for training the model.
 
 - Framework:
 [Detectron.pytorch](https://github.com/roytseng-tw/Detectron.pytorch)
