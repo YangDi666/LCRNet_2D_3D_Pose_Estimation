@@ -1,7 +1,14 @@
 
-# A Pytorch Implementation of LCRNet Training Procedure Using Detectron Framework
+# A Pytorch Implementation of LCRNet Using Detectron
 
 - Di Yang
+
+## Introduction  
+- [LCR-Net Multi-person 2D and 3D Pose Detection](https://thoth.inrialpes.fr/src/LCR-Net/) is realised by INRIA Grenoble team and this code is for training the model.
+
+- Framework:
+[Detectron.pytorch](https://github.com/roytseng-tw/Detectron.pytorch)
+
 
 ## Getting Started
 Clone the repo:
