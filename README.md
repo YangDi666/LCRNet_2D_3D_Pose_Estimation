@@ -16,7 +16,7 @@
 Clone the repo:
 
 ```
-https://github.com/YangDi666/LCRNet-2D-3D-Pose-Estimation.git
+git clone https://github.com/YangDi666/LCRNet-2D-3D-Pose-Estimation.git
 ```
 
 ### Requirements
