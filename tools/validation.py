@@ -14,7 +14,7 @@ from tqdm import tqdm
 
 
 NT=5
-def get_pose( imagedir, checkpoint, gpuid):
+def get_pose( imagedir, checkpoint, gpuid, model_o):
 
     load_name = checkpoint
     logging.info("loading checkpoint %s", load_name)
@@ -40,7 +40,7 @@ def get_pose( imagedir, checkpoint, gpuid):
             losses=checkpoint['losses']   
     
     # Load anchor configs
-    anchorfile='configs/anchors/anchor_cfg.pkl'
+    anchorfile=model_o
     with open(anchorfile, 'rb') as fid:
        anchor_cfg = pickle.load(fid)
     
@@ -52,6 +52,7 @@ def get_pose( imagedir, checkpoint, gpuid):
     
     K = model['anchor_poses'].shape[0]
     njts = model['anchor_poses'].shape[1]//5 # 5 = 2D + 3D
+    print('dfg: ', model['cfg'])
     # save the model
     model_dir = os.path.join('models')
     if not os.path.exists(model_dir):

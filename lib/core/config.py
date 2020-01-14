@@ -456,6 +456,7 @@ __C.MODEL.LOAD_IMAGENET_PRETRAINED_WEIGHTS = True
 
 __C.MODEL.UNSUPERVISED_POSE = False
 
+__C.MODEL.ANCHOR_POSES = 'configs/anchors/InTheWild-ResNet50_anchor_cfg.pkl'
 
 # ---------------------------------------------------------------------------- #
 # RetinaNet options

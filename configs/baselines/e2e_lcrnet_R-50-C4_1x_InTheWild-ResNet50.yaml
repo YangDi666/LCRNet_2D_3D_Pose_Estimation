@@ -4,6 +4,7 @@ MODEL:
   FASTER_RCNN: True
   NUM_CLASSES: 21
   LOAD_IMAGENET_PRETRAINED_WEIGHTS: True
+  ANCHOR_POSES: 'configs/anchors/InTheWild-ResNet50_anchor_cfg.pkl'
 NUM_GPUS: 8
 RESNETS:
   IMAGENET_PRETRAINED_WEIGHTS: 'data/pretrained_model/resnet50_caffe.pth'

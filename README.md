@@ -132,7 +132,7 @@ Use the environment variable `CUDA_VISIBLE_DEVICES` to control which GPUs to use
 ### Train from scratch
 Take LCRNet with res50 backbone for example.
 ```
-python tools/train_net_step.py --dataset real1 --cfg configs/baselines/e2e_lcrnet_R-50-C4_1x.yaml --use_tfboard --bs {batch_size(num of gpu)} 
+python tools/train_net_step.py --dataset real1 --cfg configs/baselines/e2e_lcrnet_R-50-C4_1x_InTheWild-ResNet50.yaml --use_tfboard --bs {batch_size(num of gpu)} 
 ```
 The checkpoint will be saved in the folder "Outputs"
 
@@ -156,7 +156,7 @@ python train_net_step.py --help
 ### Evaluate the training results
 For example, test LCRNet on Human3.6m real1 val set
 ```
-python tools/test_net.py --dataset real1 --cfg configs/baselines/e2e_lcrnet_R-50-C4_1x.yaml --load_ckpt {path/to/your/checkpoint}
+python tools/test_net.py --dataset real1 --cfg configs/baselines/e2e_lcrnet_R-50-C4_1x_InTheWild-ResNet50.yaml --load_ckpt {path/to/your/checkpoint}
 ```
 The evaluation result will be saved in the folder "evaluations" and the model will be saved in the folder "models"
 

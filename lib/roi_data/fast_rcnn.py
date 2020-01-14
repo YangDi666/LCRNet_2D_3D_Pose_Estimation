@@ -33,7 +33,7 @@ import pickle
 NT=5
 
 # Load anchor poses
-anchorfile='configs/anchors/anchor_cfg.pkl'
+anchorfile=cfg.MODEL.ANCHOR_POSES
 with open(anchorfile, 'rb') as fid:
    anchor_cfg = pickle.load(fid)
 anchor_poses = anchor_cfg['anchor_poses'][:,:13*NT]

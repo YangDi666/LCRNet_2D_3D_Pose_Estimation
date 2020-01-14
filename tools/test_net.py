@@ -153,7 +153,7 @@ if __name__ == '__main__':
     roidb=dataset.get_roidb(gt=True)
     
     imagedir=dataset.image_directory
-    results=validation.get_pose(imagedir, ckpt_path, 0)
+    results=validation.get_pose(imagedir, ckpt_path, 0, cfg.MODEL.ANCHOR_POSES)
     #print('results:', results)
     err2d=0
     err3d=0
