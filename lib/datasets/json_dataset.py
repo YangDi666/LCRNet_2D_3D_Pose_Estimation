@@ -52,9 +52,12 @@ NT=5
 
 # Load anchor poses
 anchorfile=cfg.MODEL.ANCHOR_POSES
-with open(anchorfile, 'rb') as fid:
-   anchor_cfg = pickle.load(fid)
-anchor_poses = anchor_cfg['anchor_poses'][:,:13*NT]
+if os.path.isfile(anchorfile):
+    with open(anchorfile, 'rb') as fid:
+       anchor_cfg = pickle.load(fid)
+    anchor_poses = anchor_cfg['anchor_poses'][:,:13*NT]
+else:
+    anchor_poses=np.zeros((20,65))
 
 
 class JsonDataset(object):

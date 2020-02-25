@@ -24,6 +24,7 @@ from __future__ import unicode_literals
 
 import numpy as np
 import numpy.random as npr
+import os
 
 from core.config import cfg
 import utils.boxes as box_utils
@@ -34,9 +35,12 @@ NT=5
 
 # Load anchor poses
 anchorfile=cfg.MODEL.ANCHOR_POSES
-with open(anchorfile, 'rb') as fid:
-   anchor_cfg = pickle.load(fid)
-anchor_poses = anchor_cfg['anchor_poses'][:,:13*NT]
+if os.path.isfile(anchorfile):
+    with open(anchorfile, 'rb') as fid:
+       anchor_cfg = pickle.load(fid)
+    anchor_poses = anchor_cfg['anchor_poses'][:,:13*NT]
+else:
+    anchor_poses=np.zeros((20,65))
 
 def get_fast_rcnn_blob_names(is_training=True):
     """Fast R-CNN blob names."""
