@@ -1,8 +1,6 @@
 
 # A Pytorch Implementation of LCRNet Using Detectron
 
-- Di Yang
-
 ![ad](https://github.com/YangDi666/LCRNet-2D-3D-Pose-Estimation/blob/master/demo/result_010817395615_0real_im_1_1.png)
 
 ## Introduction  
